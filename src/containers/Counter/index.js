@@ -9,20 +9,22 @@ import { selectCount } from './selectors'
 import Wrapper from './Wrapper'
 import CounterWrapper from './components/Counter'
 
+import { Button } from 'material-ui'
+
 class Counter extends Component {
   render () {
     return (
       <Wrapper>
         <CounterWrapper>{this.props.count}</CounterWrapper>
-        <button onClick={this.props.actions.increment}>
+        <Button raised color="primary" onClick={this.props.actions.increment}>
           Increment
-        </button>
-        <button onClick={this.props.actions.incrementAsync}>
+        </Button>
+        <Button raised onClick={this.props.actions.incrementAsync}>
           Debounced Increment Async
-        </button>
-        <button onClick={this.props.actions.decrement}>
+        </Button>
+        <Button onClick={this.props.actions.decrement}>
           Decrement
-        </button>
+        </Button>
       </Wrapper>
     )
   }

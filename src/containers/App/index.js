@@ -16,6 +16,9 @@ import Footer from 'components/Footer'
 import Wrapper from './components/Wrapper'
 import Main from './components/Main'
 
+// UI
+import { Button } from 'material-ui'
+
 // Actions
 import { setNotification, setNetworkStatus } from './actions'
 
@@ -44,9 +47,9 @@ class App extends Component {
   renderNotifications (notification) {
     if (!notification) return null
     return (
-      <button onClick={() => this.props.actions.setNotification(undefined)}>
+      <Button onClick={() => this.props.actions.setNotification(undefined)}>
         {notification} [x]
-      </button>
+      </Button>
     )
   }
 
