@@ -1,8 +1,8 @@
 {
-  "name": "molecule",
-  "version": "0.2.1",
-  "description": "Modern starter kit for React, Redux & Electron Apps.",
-  "author": "Zach Sherman <zach@timber.io>",
+  "name": "electron-material-test",
+  "version": "0.0.1",
+  "description": "how did i web development. Uses boilerplate from https://github.com/timberio/molecule",
+  "author": "Bryan Keller <b@bk.gg>",
   "license": "MIT",
   "main": "main.js",
   "homepage": "./",
@@ -56,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/timberio/molecule.git"
+    "url": "https://github.com/widget-/electron-material-test"
   },
   "jest": {
     "moduleFileExtensions": [
